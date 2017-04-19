@@ -20,6 +20,7 @@
     
     self.slideMenuController.bouncing = YES;
     self.slideMenuController.gestureSupport = APLSlideMenuGestureSupportDrag;
+    self.slideMenuController.showLeftMenuAlways = true;
     self.slideMenuController.separatorColor = [UIColor grayColor];
 }
 

@@ -98,6 +98,13 @@ static CGFloat kAPLSlideMenuFirstOffset = 4.0;
     return self;
 }
 
+- (void) setShowLeftMenuAlways: (BOOL ) value{
+    _showLeftMenuAlways = value;
+    if (_showLeftMenuAlways) {
+        _showLeftMenuInLandscape = true;
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -186,7 +193,15 @@ static CGFloat kAPLSlideMenuFirstOffset = 4.0;
 }
 
 - (void)displayMenuSideBySideIfNeededForOrientation:(UIInterfaceOrientation)orientation {
-    BOOL displayMenuSideBySide = (self.isShowLeftMenuInLandscape || self.isShowRightMenuInLandscape) && (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) && UIInterfaceOrientationIsLandscape(orientation);
+    
+    BOOL displayMenuSideBySide = false;
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad && self.showLeftMenuAlways) {
+        displayMenuSideBySide = true;
+    } else {
+        if (UIInterfaceOrientationIsLandscape(orientation)) {
+            displayMenuSideBySide = (self.isShowLeftMenuInLandscape || self.isShowRightMenuInLandscape);
+        }
+    }
     
     CGFloat offsetLeft = displayMenuSideBySide && self.isShowLeftMenuInLandscape ? [self menuAbsoluteWidth] : 0.;
     CGFloat offsetRight = displayMenuSideBySide && self.isShowRightMenuInLandscape ? [self menuAbsoluteWidth] : 0.;
