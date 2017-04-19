@@ -97,11 +97,15 @@ static CGFloat kAPLSlideMenuFirstOffset = 4.0;
     }
     return self;
 }
+- (void) setShowLeftMenuInLandscape: (BOOL ) value{
+    _showLeftMenuInLandscape = value;
+    [self displayMenuSideBySideIfNeededForOrientation:[UIApplication sharedApplication].statusBarOrientation];
+}
 
 - (void) setShowLeftMenuAlways: (BOOL ) value{
     _showLeftMenuAlways = value;
     if (_showLeftMenuAlways) {
-        _showLeftMenuInLandscape = true;
+        self.showLeftMenuInLandscape = true;
     }
 }
 
@@ -190,10 +194,6 @@ static CGFloat kAPLSlideMenuFirstOffset = 4.0;
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
     [self updateShadowPath];
-}
-
-- (void) displayMenuForOrientation:(UIInterfaceOrientation)orientation{
-    [self displayMenuSideBySideIfNeededForOrientation:orientation];
 }
 
 - (void)displayMenuSideBySideIfNeededForOrientation:(UIInterfaceOrientation)orientation {
