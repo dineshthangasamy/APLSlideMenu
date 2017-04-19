@@ -18,6 +18,7 @@
 		B3FCC434183A2480005BF9D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3FCC432183A2480005BF9D9 /* InfoPlist.strings */; };
 		B3FCC441183A2509005BF9D9 /* APLSlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3FCC440183A2509005BF9D9 /* APLSlideMenuViewController.m */; };
 		B6A281FE18EEB2B200926904 /* APLSlideMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A281FD18EEB2B200926904 /* APLSlideMenuSegue.m */; };
+		BC1C7E2F1EA7CC4D00FE5699 /* LaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1C7E2E1EA7CC4D00FE5699 /* LaunchStoryboard.storyboard */; };
 		DD88AE3116809C51000412E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD88AE3016809C51000412E1 /* UIKit.framework */; };
 		DD88AE3316809C51000412E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD88AE3216809C51000412E1 /* Foundation.framework */; };
 		DD88AE3516809C51000412E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD88AE3416809C51000412E1 /* CoreGraphics.framework */; };
@@ -43,6 +44,7 @@
 		B3FCC440183A2509005BF9D9 /* APLSlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLSlideMenuViewController.m; sourceTree = "<group>"; };
 		B6A281FC18EEB2B200926904 /* APLSlideMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLSlideMenuSegue.h; sourceTree = "<group>"; };
 		B6A281FD18EEB2B200926904 /* APLSlideMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLSlideMenuSegue.m; sourceTree = "<group>"; };
+		BC1C7E2E1EA7CC4D00FE5699 /* LaunchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		DD88AE2D16809C51000412E1 /* APLSlideMenuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APLSlideMenuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD88AE3016809C51000412E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD88AE3216809C51000412E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +117,7 @@
 		DD88AE3616809C51000412E1 /* APLSlideMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BC1C7E2E1EA7CC4D00FE5699 /* LaunchStoryboard.storyboard */,
 				B3ED54A5197D3050005230DB /* iPad */,
 				B3FCC40A183A1B35005BF9D9 /* APLAppDelegate.h */,
 				B3FCC40B183A1B35005BF9D9 /* APLAppDelegate.m */,
@@ -202,6 +205,7 @@
 				B3FCC41B183A1B99005BF9D9 /* Default@2x.png in Resources */,
 				B3FCC41A183A1B99005BF9D9 /* Default.png in Resources */,
 				B3FCC419183A1B99005BF9D9 /* Default-568h@2x.png in Resources */,
+				BC1C7E2F1EA7CC4D00FE5699 /* LaunchStoryboard.storyboard in Resources */,
 				B3FCC434183A2480005BF9D9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

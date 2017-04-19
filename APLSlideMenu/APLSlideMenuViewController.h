@@ -75,7 +75,7 @@ extern NSString *APLSlideMenuDidHideNotification;
 @property (nonatomic, assign, getter = isShowRightMenuInLandscape) BOOL showRightMenuInLandscape;
 
 /** always show menu like an UISplitViewController in any orientation on iPad */
-@property (nonatomic, assign, getter = isShowLeftMenuInPotrait) BOOL showLeftMenuAlways;
+@property (nonatomic, assign, getter = isShowLeftMenuAlways) BOOL showLeftMenuAlways;
 
 /** draw a shadow above menu view controllers, default is YES */
 @property (nonatomic, assign) BOOL useShadow;
