@@ -192,6 +192,10 @@ static CGFloat kAPLSlideMenuFirstOffset = 4.0;
     [self updateShadowPath];
 }
 
+- (void) displayMenuForOrientation:(UIInterfaceOrientation)orientation{
+    [self displayMenuSideBySideIfNeededForOrientation:orientation];
+}
+
 - (void)displayMenuSideBySideIfNeededForOrientation:(UIInterfaceOrientation)orientation {
     
     BOOL displayMenuSideBySide = false;

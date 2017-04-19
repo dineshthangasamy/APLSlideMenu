@@ -99,7 +99,7 @@ extern NSString *APLSlideMenuDidHideNotification;
 - (void) switchRightMenu:(BOOL) animated;
 
 - (void) dismissContentViewController;
-
+- (void) displayMenuForOrientation:(UIInterfaceOrientation)orientation;
 @end
 
 //----------------------------------------------
