@@ -104,9 +104,7 @@ static CGFloat kAPLSlideMenuFirstOffset = 4.0;
 
 - (void) setShowLeftMenuAlways: (BOOL ) value{
     _showLeftMenuAlways = value;
-    if (_showLeftMenuAlways) {
-        self.showLeftMenuInLandscape = true;
-    }
+    self.showLeftMenuInLandscape = _showLeftMenuAlways;
 }
 
 - (void)viewDidLoad {
